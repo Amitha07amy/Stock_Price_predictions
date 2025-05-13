@@ -1,0 +1,106 @@
+/* Base styles */
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Day Theme - Pastel Pink */
+body.day-theme {
+    background-color: #ffe6f0; /* pastel pink */
+    color: #333;
+}
+
+/* Night Theme - Dark Pink */
+body.night-theme {
+    background-color: #660033; /* dark pink */
+    color: #f9f9f9;
+}
+
+.header-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* Filters section */
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    margin: 10px;
+    min-width: 200px;
+}
+
+/* Stats cards container */
+.stats-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual card styling */
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card.green {
+    color: green;
+}
+
+.card.red {
+    color: red;
+}
+
+/* Night theme overrides for cards */
+body.night-theme .card {
+    background-color: #99004d;
+    color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Prediction chart title styling */
+#prediction-chart {
+    margin-top: 30px;
+}
+
+/* Add margin to graphs in general */
+.dcc-graph {
+    margin: 20px 0;
+}
+
