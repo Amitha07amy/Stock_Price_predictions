@@ -7,7 +7,7 @@ This project is an interactive Stock Price Dashboard built using Plotly Dash, wh
 - Select specific companies, years, and months for detailed insights
 - Switch between Day and Night themes (Pastel Pink / Dark Pink)
 - Generate and visualize future close price predictions
-- Automatically save forecasted results to CSV for each stock
+- Automatically save forecasted results to CSV for each stock / predicted plots are saved in a CSV file
 
 ---
 
